@@ -6,6 +6,12 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+	stage('Ruby'){
+	    steps {
+                sh 'ruby --version'
+            }
+        }
+	}
         }
     }
 }
